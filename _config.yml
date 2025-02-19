@@ -18,10 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: My Blogs related  to stuff I dive into over weekends
+title: My Blogs related to stuff I dive into over weekends
 description: 
-  This is a blog where I write about stuff I dive into over weekends. I am a software engineer and I love to explore tech developments and write about them.
+  This is a blog where I write about stuff I dive into over weekends. 
+  I am a software engineer and I love to explore tech developments and write about them.
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+theme: minimal-mistakes/jekyll-theme-minimal-mistakes
+markdown: kramdown
+
