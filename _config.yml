@@ -23,7 +23,8 @@ description:
   This is a blog where I write about stuff I dive into over weekends. 
   I am a software engineer and I love to explore tech developments and write about them.
 # Build settings
-remote_theme: "mmistakes/minimal-mistakes"
+remote_theme: "cotes2020/jekyll-theme-chirpy"
+
 plugins:
   - jekyll-include-cache
 

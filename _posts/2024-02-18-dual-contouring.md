@@ -131,5 +131,3 @@ For the polygonisation the original paper connects the dual vertices of cells su
 Dual Contouring significantly improves upon Marching Cubes by preserving sharp features while maintaining efficiency. Using **adaptive octrees**, **QEF optimization**, and **efficient data structures**, we can construct high-quality isosurfaces efficiently.
 
 The complete **C++ implementation** is available [here](https://github.com/Dhruv-Sharma01/Adaptive-Dual-Contouring-over-Uniform-Leaf). Future optimizations may include **adaptive merging of dual vertices** and **GPU acceleration for real-time processing**.
-
-Would love to hear feedback! 🚀
