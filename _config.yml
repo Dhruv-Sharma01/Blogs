@@ -5,7 +5,7 @@ description: >
   I am a software engineer, passionate about tech developments, and I document my learnings here.
 
 # Build settings
-remote_theme: "poole/hyde"
+remote_theme: "emilbaehr/automatic-app-landing-page"
 markdown: kramdown
 plugins:
   - jekyll-remote-theme
