@@ -4,11 +4,6 @@ title: "Understanding Dual Contouring"
 date: 2024-02-18
 categories: Isosurfacing
 ---
----
-title: "A Guide to Dual Contouring: From Theory to Implementation"
-description: "An in-depth look at Dual Contouring, its advantages over Marching Cubes, and a C++ implementation."
-layout: post
----
 
 # **A Guide to Dual Contouring: From Theory to Implementation**
 
