@@ -5,7 +5,7 @@ description: >
   I am a software engineer, passionate about tech developments, and I document my learnings here.
 
 # Build settings
-remote_theme: "mmistakes/minimal-mistakes"
+remote_theme: "poole/hyde"
 markdown: kramdown
 plugins:
   - jekyll-remote-theme
