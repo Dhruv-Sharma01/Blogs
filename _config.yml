@@ -7,3 +7,9 @@ description: >
 # Build settings
 remote_theme: "cotes2020/jekyll-theme-chirpy"
 markdown: kramdown
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-include-cache
