@@ -5,7 +5,7 @@ description: >
   I am a software engineer, passionate about tech developments, and I document my learnings here.
 
 # Build settings
-remote_theme: "cotes2020/jekyll-theme-chirpy"
+remote_theme: "pmarsceill/just-the-docs"
 markdown: kramdown
 plugins:
   - jekyll-remote-theme
