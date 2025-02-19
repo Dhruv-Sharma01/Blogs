@@ -23,6 +23,9 @@ description:
   This is a blog where I write about stuff I dive into over weekends. 
   I am a software engineer and I love to explore tech developments and write about them.
 # Build settings
-theme: minimal-mistakes/jekyll-theme-minimal-mistakes
+remote_theme: "mmistakes/minimal-mistakes"
+plugins:
+  - jekyll-include-cache
+
 markdown: kramdown
 
