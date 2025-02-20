@@ -100,22 +100,22 @@ If `QR = true`, the function uses **Singular Value Decomposition (SVD)** to solv
 1. Construct an **A matrix** where each row represents the **normal vector** at an intersection.  
 2. Construct a **d vector**, where each entry is the **dot product** of the normal and the intersection point.  
 
-\[A \cdot v = d\]
+$$ A \cdot v = d $$
 
 Where:  
 
-- \( A \) is an \( m \times 3 \) matrix of normal vectors.  
-- \( d \) is an \( m \times 1 \) vector, where each entry is \( n_i \cdot p_i \).  
+- \( A \) - \( m x 3 \) matrix of normal vectors.  
+- \( d \) is an \( m x 1 \) vector, where each entry is $\( n_i \cdot p_i \)$.  
 
 ### SVD Optimization  
 
 - Solve for \( v \) in the least-squares sense:  
 
-\[v = A^+ d\]
+$$ v = A^+ d $$
 
-- Here, \( A^+ \) is the **pseudoinverse**, computed using **SVD decomposition**:  
+$[\ A^+ \]$ is the **pseudoinverse**, computed using **SVD decomposition**:   
 
-\[A = U S V^T\]
+$$ A = U S V^T $$
 
 - Using **Eigen’s JacobiSVD**, the solution is computed efficiently.  
 
