@@ -93,29 +93,37 @@ If `QR = false`, the **determinant method** is used to solve the QEF. Otherwise,
 
 ### **QEF Formulation and SVD Solution**
 
-If `QR = true`, the function uses **Singular Value Decomposition (SVD)** to solve the least-squares problem for minimizing the **Quadric Error Function (QEF)**.
+If `QR = true`, the function uses **Singular Value Decomposition (SVD)** to solve the least-squares problem for minimizing the **Quadric Error Function (QEF)**.  
 
-1. **Matrix Formulation**:
-   - Construct an **A matrix** where each row represents the **normal vector** at an intersection.
-   - Construct a **d vector**, where each entry is the **dot product** of the normal and the intersection point.
+### Matrix Formulation  
 
-   $$ A \cdot v = d $$
+1. Construct an **A matrix** where each row represents the **normal vector** at an intersection.  
+2. Construct a **d vector**, where each entry is the **dot product** of the normal and the intersection point.  
 
-   Where:
-   - \(A\) is an \(m \times 3\) matrix of normal vectors.
-   - \(d\) is an \(m \times 1\) vector, where each entry is \(n_i \cdot p_i\).
+\[A \cdot v = d\]
 
-2. **SVD Optimization**:
-   - Solve for \(v\) in the least-squares sense:
-     $$ v = A^+ d $$
-     Here, \(A^+\) is the **pseudoinverse**, computed using **SVD decomposition**:
-     $$ A = U S V^T $$
-     Using **Eigen's JacobiSVD**, the solution is computed efficiently.
+Where:  
 
-3. **Final Vertex Placement**:
-   - The computed \(v\) is stored as the **dual vertex** for the octree cell, representing the best approximation of the **feature point**.
+- \( A \) is an \( m \times 3 \) matrix of normal vectors.  
+- \( d \) is an \( m \times 1 \) vector, where each entry is \( n_i \cdot p_i \).  
 
-This method ensures that the **vertex placement minimizes the error function**, leading to **accurate reconstruction of sharp features**.
+### SVD Optimization  
+
+- Solve for \( v \) in the least-squares sense:  
+
+\[v = A^+ d\]
+
+- Here, \( A^+ \) is the **pseudoinverse**, computed using **SVD decomposition**:  
+
+\[A = U S V^T\]
+
+- Using **Eigen’s JacobiSVD**, the solution is computed efficiently.  
+
+### Final Vertex Placement  
+
+- The computed **\( v \)** is stored as the **dual vertex** for the octree cell, representing the best approximation of the **feature point**.  
+
+
 
 ---
 
